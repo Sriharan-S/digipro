@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "DigiPro Bypass",
+    "version": "0.5",
+    "update_url": "https://sriharan.site/digipro/update.json",
+    "description": "This extension was developed for ACE editor based online Compilers. which can able to Paste content by using alt+v",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["http://10.1.5.12/student/*", "http://ksrctdigipro.in/student/*", "https://ksrctdigipro.in/student/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "icons": {
+      "16": "d16.png",
+      "48": "d48.png",
+      "128": "d128.png"
+    }
+  }
+  
